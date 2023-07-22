@@ -4,51 +4,124 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  background: rgb(32,54,75);
+header {
+  width: 100%;
+  height: 100vh;
+  background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url(./images/marketing.jpg);
+  background-size: cover;
+  font-family: sans-serif;
 }
 
-.header{
-    position: fixed;
-    top: 0;
-    left:0;
-    width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+nav {
+  width: 100%;
+  height: 100px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em;
 }
 
-.logo{
-    font-size: 32px;
-    color:white ;
-    text-decoration: none;
-    font-weight: 700; 
+.logo {
+  font-size: 1.7em;
+  letter-spacing: 2px;
+  font-weight: 700;
 }
 
-.navbar a{
-    position: relative;
-    font-size: 18px;
-    color: white;
-    font-weight: lighter;
-    text-decoration: none;
-    margin-left: 40px;
+.marketing {
+  color: rgb(21, 122, 200);
 }
 
-.navbar a::before {
-    content:'';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height:2px;
-    background: rgb(249,195,33);
-    transition: .3s;
-    
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 7px 20px;
+  font-size: 17px;
+  position: relative;
 }
 
-.navbar a:hover::before{
-    width: 100%;
+.menu a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-bottom: 2px solid rgb(21, 122, 200);
+  transition: .4s linear;
+}
+
+.menu a:hover::before{
+  width: 90%;
+}
+.register a{
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 17px;
+  background: rgb(21, 122, 200);
+  border-radius: 8px;
+}
+
+.register a:hover {
+  background: transparent;
+  border: 1px solid rgb(21, 122, 200) ;
+  transition: 0.4s;
+}
+
+.h-txt{
+  max-width: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  margin-top: 2em;
+}
+
+.h-txt h1{
+  font-size: 3em;
+}
+
+.h-txt p{
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+
+#form{
+  border-radius: 18px;
+  box-shadow: 5px 5px 5px;
+  display: block;
+  max-width: 450px;
+  margin-top: 1em;
+  margin-left: 7.5em;
+  padding: 7px 14px;
+  text-align: center;
+  border: none;
+}
+
+#form:hover{
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid white;
+  transition: .4s;
+}
+
+button{
+  background: rgb(21, 122, 200);
+  margin: 1em 1em 0;
+  padding: 7px 21px;
+  border-radius: 18px;
+  border: none;
+  text-decoration: none;
+  color: white;
+}
+
+button:hover{
+  border: 2px solid white ;
+  cursor: pointer;
+  color: white;
+  background-color:transparent;
+  transition: 0.2s;
 }
