@@ -2,28 +2,34 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+  flex-wrap: nowrap;
 }
 
 header {
-  width: 100%;
-  height: 100vh;
-  background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url(./images/marketing.jpg);
-  background-size: cover;
   font-family: sans-serif;
+  flex-wrap: nowrap;
+  z-index: 1000;
+  width: 100%;
+  height: 80px;
 }
 
 nav {
   width: 100%;
-  height: 100px;
+  height: 80px;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3em;
+  position:fixed;
+  /* background-color: rgba(62, 57, 57, 0.436); */
+  background-color: rgba(17, 16, 16, 0.735);
+  box-shadow:  5px 5px 5px rgb(0, 0, 0);
 }
 
 .logo {
-  font-size: 1.7em;
+  font-size: 1.5em;
   letter-spacing: 2px;
   font-weight: 700;
 }
@@ -36,79 +42,87 @@ nav {
   text-decoration: none;
   color: white;
   padding: 7px 20px;
-  font-size: 17px;
+  font-size: 1rem;
   position: relative;
 }
 
-.menu a::before{
-  content: '';
+.menu a::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 0%;
   height: 100%;
   border-bottom: 2px solid rgb(21, 122, 200);
-  transition: .4s linear;
+  transition: 0.4s linear;
 }
 
-.menu a:hover::before{
+.menu a:hover::before {
   width: 90%;
 }
-.register a{
+.register a {
   text-decoration: none;
   color: white;
   padding: 10px 20px;
-  font-size: 17px;
+  font-size: 1rem;
   background: rgb(21, 122, 200);
   border-radius: 8px;
 }
 
 .register a:hover {
   background: transparent;
-  border: 1px solid rgb(21, 122, 200) ;
+  border: 2px solid rgb(21, 122, 200);
   transition: 0.4s;
 }
 
-.h-txt{
-  max-width: 650px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.h-txt {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+    url(./images/marketing.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: 100;
   text-align: center;
+  padding-top: 4rem;
+  padding-right: 1.5rem;
   color: white;
-  margin-top: 2em;
 }
 
-.h-txt h1{
+.h-txt form{
+  padding-left: 33rem;
+}
+
+.h-txt h1 {
   font-size: 3em;
 }
 
-.h-txt p{
+.h-txt p {
   font-size: 0.8em;
   line-height: 1.5;
 }
 
-#form{
+#form {
   border-radius: 18px;
   box-shadow: 5px 5px 5px;
   display: block;
-  max-width: 450px;
+  padding-right: 20rem;
   margin-top: 1em;
-  margin-left: 7.5em;
   padding: 7px 14px;
   text-align: center;
   border: none;
 }
 
-#form:hover{
+#form:hover {
   cursor: pointer;
   background-color: transparent;
   border: 2px solid white;
-  transition: .4s;
+  transition: 0.4s;
 }
 
-button{
+button {
   background: rgb(21, 122, 200);
   margin: 1em 1em 0;
   padding: 7px 21px;
@@ -118,10 +132,45 @@ button{
   color: white;
 }
 
-button:hover{
-  border: 2px solid white ;
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button:hover {
+  border: 2px solid rgb(21, 122, 200);
   cursor: pointer;
   color: white;
-  background-color:transparent;
+  background-color: transparent;
   transition: 0.2s;
+}
+
+#services{
+  width: 100%;
+  height: 100vh;
+}
+
+#services h1 {
+  font-size: 2em;
+}
+
+@media (max-width: 860px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .menu a {
+    font-size: 0.9rem;
+  }
+
+  .register a {
+    padding: 7px 18px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1260px) {
+  .h-txt {
+    top: 40%;
+  }
 }
