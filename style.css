@@ -147,11 +147,45 @@ button:hover {
 
 #services{
   width: 100%;
-  height: 100vh;
+  height: 150vh;
+  background-color: aliceblue;
+
 }
 
 #services h1 {
   font-size: 2em;
+  text-align: center;
+  padding-top: 4em;
+}
+
+#services hr{
+  width: 9%;
+  background-color:rgb(21, 122, 200) ;
+  height: 0.5vh;
+  margin: 0 auto;
+}
+
+.services-p {
+  font-size: 0.8em;
+  line-height: 1.5;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+}
+
+.parent-service{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.kid-service{
+  border: 2px solid black;
+  padding: 3rem;
+  margin: 3rem;
 }
 
 @media (max-width: 860px) {
