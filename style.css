@@ -156,7 +156,7 @@ button:hover {
 
 #services {
   width: 100%;
-  height: 170vh;
+  height: 230vh;
   background-color: white;
 }
 
@@ -169,7 +169,7 @@ button:hover {
 
 #services hr {
   width: 9%;
-  background-color: rgb(21, 122, 200);
+  background-color:  blueviolet;
   height: 0.5vh;
   margin: 0 auto;
 }
@@ -183,58 +183,138 @@ button:hover {
   color: rgba(17, 16, 16, 0.735);
 }
 
-.parent-service {
+.service-1{
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
-.kid-service {
-  border: 2px solid rgb(210, 210, 210);
-  padding: 2rem 5rem 2rem 2rem;
-  margin: 2rem 3rem 5em 5rem;
-  color: rgba(17, 16, 16, 0.735);
-  box-shadow: 5px 5px 5px;
-  background-color: white;
+.first-service-image{
+  background-image:  url(./images/freelancers1.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 55%;
+  height: 45vh;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  border-radius: 0 70px 0 70px;
 }
 
-.kid-service h2 {
-  font-size: 1.5rem;
-  padding: 0.8em 0 0.8em 0;
-  color: black;
-}
-
-.kid-service p {
-  font-size: 0.8em;
-  line-height: 1.5;
-}
-
-.kid-service:hover {
+.first-service-image:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(103, 22, 128, 0.5)), url(./images/freelancers1.jpg);
   cursor: pointer;
+  border-radius: 50px 0px 50px 0px;
+  transition: 0.4s all ease-in-out;
+}
+
+.first-service-p-title{
+  font-size: 1.5rem;
+  margin: 3rem 5rem 1rem 0;
+  
+  /* font-weight: 700; */
+}
+
+.first-service-p-title span{
+  color: blueviolet;
+  font-weight: 700;
+}
+
+.first-service-p-p{
+  font-size: 0.8em;
+  line-height: 2;
+  padding-bottom: 1rem;
+  /* margin-left: 1rem; */
+  color: rgba(17, 16, 16, 0.735);
+}
+
+.service-1-button a {
+  text-decoration: none;
   color: white;
-  background-color: rgb(21, 122, 200);
-  border: 2px solid white;
-  transition: all 0.5s ease-in-out;
-  border-radius: 25px;
+  padding-top: 2rem;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  background: blueviolet;
+  border-radius: 8px;
+  /* margin-left: 1rem; */
 }
 
-.team-container {
+.service-1-button :hover {
+  background: white;
+  border: 2px solid blueviolet;
+  transition: all 0.5s ease;
+  color: blueviolet;
+}
+
+
+.service-2{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
-.child-team1 {
-  padding: 2rem 2rem 2rem 2rem;
-  /* margin: 2rem 3rem 5em 5rem; */
-  margin-left: 4.9rem;
-  margin-bottom: 2rem;
-  color: black;
-  /* box-shadow: 2px 2px 2px 2px; */
-  background-color: white;
+.second-service-p-title{
+  font-size: 1.5rem;
+  margin: 3rem 2em 0 2rem;
 }
 
-.child-team1 h2 {
-  font-size: 2rem;
+.second-service-p-title span{
+  color: blueviolet;
+  font-weight: 700;
+}
+
+.second-service-p-p{
+  font-size: 0.8em;
+  line-height: 2;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  color: rgba(17, 16, 16, 0.735);
+  margin-left: 2rem;
+}
+
+.service-2-button a {
+  text-decoration: none;
+  color: white;
+  padding-top: 2rem;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  background: blueviolet;
+  border-radius: 8px;
+  margin-left: 2rem;
+}
+
+.service-2-button :hover {
+  background: white;
+  border: 2px solid blueviolet;
+  transition: all 0.5s ease;
+  color: blueviolet;
+}
+
+.second-service-image{
+  background-image:  url(./images/freelancers2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 55%;
+  height: 45vh;
+  margin-top: 3rem;
+  margin-left: 0rem;
+  margin-right: 3rem;
+  border-radius: 0 70px 0 70px;
+}
+
+.second-service-image:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(103, 22, 128, 0.5)), url(./images/freelancers2.jpg);
+  cursor: pointer;
+  border-radius: 50px 0px 50px 0px;
+  transition: 0.4s all ease-in-out;
+}
+
+
+.team-container{
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: space-between;
+  margin: 3.5rem;
 }
 
 .child-team1 p {
@@ -252,30 +332,27 @@ button:hover {
   padding-top: 2rem;
   padding: 10px 20px;
   font-size: 0.9rem;
-  background: rgb(21, 122, 200);
+  background: blueviolet;
   border-radius: 8px;
 }
 
 .team-button :hover {
-  background: transparent;
-  border: 2px solid rgb(21, 122, 200);
+  background: white;
+  border: 2px solid blueviolet;
   transition: all 0.5s ease;
-  color: black;
+  color: blueviolet;
 }
 
 .child-team2 {
-  border: 2px solid rgb(210, 210, 210);
-  padding: 2rem 2rem 2rem 2rem;
-  /* margin: 2rem 3rem 5em 5rem; */
-  margin-left: 8.5rem;
-  margin-bottom: 2rem;
+  border-radius: 20px;
+  border: 2px solid rgba(137, 43, 226, 0.516);
+  padding: 2rem 2rem 2rem 2rem; 
   color: black;
-  box-shadow: 5px 5px 5px;
   background-color: white;
 }
 
 .child-team2 h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: center;
   padding-top: 1rem;
 }
@@ -287,27 +364,51 @@ button:hover {
   padding-top: 1rem;
   padding-bottom: 1.5rem;
   color: rgba(17, 16, 16, 0.735);
+} 
+
+.child-team2:hover{
+  cursor: pointer;
+  box-shadow: 2px 2px 2px rgba(137, 43, 226, 0.516);
+  transition: 0.4s all ease-in;
 }
 
 .avatar1 {
-  /* vertical-align: middle; */
-  width: 80px;
-  height: 80px;
-  border-radius: 80%;
-  border: 3px solid rgba(62, 57, 57, 0.436);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid blueviolet;
   justify-content: center;
   margin-left: 4rem;
 }
 
 .avatar2 {
-  vertical-align: middle;
-  width: 80px;
-  height: 80px;
-  border-radius: 80%;
-  border: 3px solid rgba(62, 57, 57, 0.436);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid blueviolet;
   justify-content: center;
   margin-left: 4rem;
+} 
+
+/* #blog {
+  width: 100%;
+  height: 170vh;
+  background-color: white;
 }
+
+#blog h1 {
+  font-size: 2em;
+  text-align: center;
+  padding-top: 4em;
+  letter-spacing: 2px;
+}
+
+#blog hr {
+  width: 6%;
+  background-color: rgb(21, 122, 200);
+  height: 0.5vh;
+  margin: 0 auto;
+} */
 
 @media (max-width: 860px) {
   .logo {
