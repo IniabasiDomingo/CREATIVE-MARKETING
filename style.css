@@ -22,10 +22,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 3em;
-  position:fixed;
+  position: fixed;
   /* background-color: rgba(62, 57, 57, 0.436); */
   background-color: rgba(17, 16, 16, 0.735);
-  box-shadow:  5px 5px 5px rgb(0, 0, 0);
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
 .logo {
@@ -72,7 +72,7 @@ nav {
 .register a:hover {
   background: transparent;
   border: 2px solid rgb(21, 122, 200);
-  transition: 0.4s;
+  transition: all 0.5s ease;
 }
 
 .h-txt {
@@ -91,7 +91,7 @@ nav {
   color: white;
 }
 
-.h-txt form{
+.h-txt form {
   padding-left: 33rem;
 }
 
@@ -102,6 +102,14 @@ nav {
 .h-txt p {
   font-size: 0.8em;
   line-height: 1.5;
+}
+/* how to remove border from form */
+input {
+  border: 0;
+  outline: 0;
+}
+input:focus {
+  outline: none !important;
 }
 
 #form {
@@ -125,7 +133,7 @@ nav {
 button {
   background: rgb(21, 122, 200);
   margin: 1em 1em 0;
-  padding: 7px 21px;
+  padding: 7px 20px;
   border-radius: 18px;
   border: none;
   text-decoration: none;
@@ -135,6 +143,7 @@ button {
 button a {
   text-decoration: none;
   color: white;
+  font-size: 0.9em;
 }
 
 button:hover {
@@ -142,25 +151,25 @@ button:hover {
   cursor: pointer;
   color: white;
   background-color: transparent;
-  transition: 0.2s;
+  transition: all 0.5s ease;
 }
 
-#services{
+#services {
   width: 100%;
-  height: 150vh;
-  background-color: aliceblue;
-
+  height: 170vh;
+  background-color: white;
 }
 
 #services h1 {
   font-size: 2em;
   text-align: center;
   padding-top: 4em;
+  letter-spacing: 2px;
 }
 
-#services hr{
+#services hr {
   width: 9%;
-  background-color:rgb(21, 122, 200) ;
+  background-color: rgb(21, 122, 200);
   height: 0.5vh;
   margin: 0 auto;
 }
@@ -171,21 +180,133 @@ button:hover {
   text-align: center;
   padding-top: 1em;
   padding-bottom: 1em;
-
+  color: rgba(17, 16, 16, 0.735);
 }
 
-.parent-service{
+.parent-service {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
-
 }
 
-.kid-service{
-  border: 2px solid black;
-  padding: 3rem;
-  margin: 3rem;
+.kid-service {
+  border: 2px solid rgb(210, 210, 210);
+  padding: 2rem 5rem 2rem 2rem;
+  margin: 2rem 3rem 5em 5rem;
+  color: rgba(17, 16, 16, 0.735);
+  box-shadow: 5px 5px 5px;
+  background-color: white;
+}
+
+.kid-service h2 {
+  font-size: 1.5rem;
+  padding: 0.8em 0 0.8em 0;
+  color: black;
+}
+
+.kid-service p {
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+
+.kid-service:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(21, 122, 200);
+  border: 2px solid white;
+  transition: all 0.5s ease-in-out;
+  border-radius: 25px;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.child-team1 {
+  padding: 2rem 2rem 2rem 2rem;
+  /* margin: 2rem 3rem 5em 5rem; */
+  margin-left: 4.9rem;
+  margin-bottom: 2rem;
+  color: black;
+  /* box-shadow: 2px 2px 2px 2px; */
+  background-color: white;
+}
+
+.child-team1 h2 {
+  font-size: 2rem;
+}
+
+.child-team1 p {
+  font-size: 0.8em;
+  line-height: 1.7;
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  color: rgba(17, 16, 16, 0.735);
+}
+
+.team-button a {
+  text-decoration: none;
+  color: white;
+  padding-top: 2rem;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  background: rgb(21, 122, 200);
+  border-radius: 8px;
+}
+
+.team-button :hover {
+  background: transparent;
+  border: 2px solid rgb(21, 122, 200);
+  transition: all 0.5s ease;
+  color: black;
+}
+
+.child-team2 {
+  border: 2px solid rgb(210, 210, 210);
+  padding: 2rem 2rem 2rem 2rem;
+  /* margin: 2rem 3rem 5em 5rem; */
+  margin-left: 8.5rem;
+  margin-bottom: 2rem;
+  color: black;
+  box-shadow: 5px 5px 5px;
+  background-color: white;
+}
+
+.child-team2 h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.child-team2 p {
+  font-size: 0.8em;
+  line-height: 1.7;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  color: rgba(17, 16, 16, 0.735);
+}
+
+.avatar1 {
+  /* vertical-align: middle; */
+  width: 80px;
+  height: 80px;
+  border-radius: 80%;
+  border: 3px solid rgba(62, 57, 57, 0.436);
+  justify-content: center;
+  margin-left: 4rem;
+}
+
+.avatar2 {
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  border-radius: 80%;
+  border: 3px solid rgba(62, 57, 57, 0.436);
+  justify-content: center;
+  margin-left: 4rem;
 }
 
 @media (max-width: 860px) {
