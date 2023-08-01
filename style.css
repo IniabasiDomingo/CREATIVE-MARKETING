@@ -166,9 +166,9 @@ button:hover {
 }
 
 #services h1 {
-  font-size: 2em;
+  font-size: 2.7em;
   text-align: center;
-  padding-top: 4em;
+  padding-top: 2.5em;
   letter-spacing: 2px;
 }
 
@@ -312,90 +312,9 @@ button:hover {
   transition: 0.4s all ease-in-out;
 }
 
-
-.team-container{
-  flex-wrap: nowrap;
-  display: flex;
-  justify-content: space-between;
-  margin: 3rem 3rem 0 3rem;
-}
-
-.child-team1 p {
-  font-size: 0.8em;
-  line-height: 1.7;
-  text-align: left;
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
-  color: rgba(17, 16, 16, 0.735);
-}
-
-.team-button a {
-  text-decoration: none;
-  color: white;
-  padding-top: 2rem;
-  padding: 10px 20px;
-  font-size: 0.9rem;
-  background: blueviolet;
-  border-radius: 8px;
-}
-
-.team-button :hover {
-  background: white;
-  border: 2px solid blueviolet;
-  transition: all 0.5s ease;
-  color: blueviolet;
-}
-
-.child-team2 {
-  border-radius: 20px;
-  border: 2px solid rgba(137, 43, 226, 0.516);
-  padding: 2rem 2rem 2rem 2rem; 
-  color: black;
-  background-color: white;
-}
-
-.child-team2 h2 {
-  font-size: 1.3rem;
-  text-align: center;
-  padding-top: 1rem;
-}
-
-.child-team2 p {
-  font-size: 0.8em;
-  line-height: 1.7;
-  text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
-  color: rgba(17, 16, 16, 0.735);
-} 
-
-.child-team2:hover{
-  cursor: pointer;
-  box-shadow: 2px 2px 2px rgba(137, 43, 226, 0.516);
-  transition: 0.4s all ease-in;
-}
-
-.avatar1 {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 3px solid rgb(43, 24, 60);
-  justify-content: center;
-  margin-left: 4rem;
-}
-
-.avatar2 {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 3px solid rgb(43, 24, 60);
-  justify-content: center;
-  margin-left: 4rem;
-} 
-
 #about{
   width: 100%;
-  height: 200vh;
+  height: 400vh;
   background-color: white;
 }
 
@@ -425,7 +344,112 @@ button:hover {
 .about-assurance{
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 6rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 6rem;
 }
+
+.about-assurance h3{
+  font-size: 1.3rem;
+  color: rgb(43, 24, 60);
+  padding-bottom: 1rem;
+}
+
+.about-assurance p{
+  font-size: 1rem;
+  color:rgba(17, 16, 16, 0.735) ;
+  line-height: 2;
+}
+
+.search-illustration{
+  background-image: url(./images/search-illustration.jpg);
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 3rem;
+}
+
+.partnership-illustration{
+  background-image: url(./images/partnership-illustration.jpg);
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 3rem;
+}
+
+.revenue-illustration{
+  background-image: url(./images/revenue-illustration.jpg);
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 3rem;
+}
+
+
+.story{
+  background-color: rgb(247,247,247);
+  color: rgb(43, 24, 60);
+  height: 90vh;
+  text-align: center;
+}
+
+.story h3{
+  padding-top: 6.5rem;
+  font-size: 2.7em;
+  padding-bottom: 1rem;
+}
+
+.story p{
+  font-size: 1rem;
+  color:rgba(17, 16, 16, 0.735) ;
+  line-height: 2;
+}
+
+.agent{
+  text-align: center;
+  justify-content: center;
+}
+
+.agent h1{
+  padding-top: 6.5rem;
+  font-size: 2.7em;
+  padding-bottom: 1rem;
+}
+
+.parent-agent{
+  background-color: black;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.avatar1 {
+  background-image: url(./images/);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid rgb(43, 24, 60);
+  justify-content: center;
+  margin-left: 4rem;
+}
+
+.avatar2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid rgb(43, 24, 60);
+  justify-content: center;
+  margin-left: 4rem;
+} 
+
 
 #blog {
   width: 100%;
