@@ -36,10 +36,7 @@ body {
 }
 
 /* how to remove border from form */
-input {
-  /* border: 0;
-  outline: 0; */
-}
+
 input:focus {
   outline: none !important;
 }
