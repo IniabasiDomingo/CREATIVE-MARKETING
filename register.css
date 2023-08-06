@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.register-container {
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px grey;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin: 3rem;
+  background-color: white;
+  width: 90%;
+}
+
+.register-form {
+  width: 40%;
+  height: 80vh;
+  /* border: 2px solid red; */
+  padding-top: 2rem;
+  /* padding-left: 3rem; */
+  background-color: white;
+}
+
+.register-form h1 {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+  color: rgb(43, 24, 60);
+}
+
+/* how to remove border from form */
+input {
+  /* border: 0;
+  outline: 0; */
+}
+input:focus {
+  outline: none !important;
+}
+
+#form {
+  /* margin-top: em; */
+  margin-bottom: 1rem;
+  padding: 10px 14px;
+  width: 69%;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 1rem;
+  display: block;
+  /* border-top: 0;
+  border-left: 0;
+  border-right: 0; */
+}
+
+.checkbox a{
+  color: blue;
+  text-decoration: none;
+}
+
+button{
+  display: block;
+  margin-top: 2rem;
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: bolder;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color:rgb(43, 24, 60) ;
+  transition: all 0.4s linear;
+}
+
+.register-image {
+  background-image: url(./images/sign-up-illustration.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  height: 80vh;
+  background-repeat: no-repeat;
+}
+
