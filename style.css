@@ -503,13 +503,10 @@ button:hover {
   font-size: 1rem;
 }
 
-
 .parent-agent p{
   color:rgba(17, 16, 16, 0.735) ;
 
 }
-
-
 
 .agent1 img{
   width: 120px;
@@ -562,11 +559,51 @@ button:hover {
 }
 
 footer {
-  min-height: 80vh;
+  min-height: 100vh;
   background-color:rgb(43, 24, 60) ;
   margin-top: 3rem;
   color : white;
 }
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+
+
+.address{
+  line-height: 2;
+
+}
+.address h3{
+  font-size:1em;
+  padding-bottom: 1.5rem;
+}
+
+.address h4{
+  font-size:1em;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.feedback{
+  line-height: 2;
+}
+
+.feedback h3{
+  font-size: 1em;
+  padding-bottom: 1.5rem;
+}
+
+.feedback h4{
+  font-size:1em;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
 
 @media (max-width: 860px) {
   .logo {
